@@ -9,4 +9,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="list_fatura_data">Data: </string>
+    <string name="list_fatura_refeicao">Refeição: </string>
+    <string name="list_fatura_prato">Prato: </string>
+    <string name="list_fatura_preco">Preço: </string>
 </resources>

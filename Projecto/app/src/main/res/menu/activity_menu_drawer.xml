@@ -11,6 +11,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Reservar Senhas" />
         <item
+            android:id="@+id/nav_consultar_faturas"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Faturas" />
+        <item
             android:id="@+id/nav_consultar_divida"
             android:icon="@drawable/ic_menu_manage"
             android:title="Consultar divida" />
