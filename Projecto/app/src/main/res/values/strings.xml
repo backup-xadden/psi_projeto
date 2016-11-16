@@ -1,17 +1,36 @@
 <resources>
+
     <string name="app_name">Mobile Canteen</string>
+
+    <!-- LOGIN ACTIVITY -->
+    <string name="act_login_label">Login</string>
     <string name="act_login_number">Numero de estudante</string>
     <string name="act_login_password">Password</string>
     <string name="act_login_button_login">Login</string>
     <string name="title_activity_menu">MenuActivity</string>
 
+    <!-- NAVIGATION DRAWER -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
 
-    <string name="list_fatura_data">Data: </string>
-    <string name="list_fatura_refeicao">Refeição: </string>
-    <string name="list_fatura_prato">Prato: </string>
-    <string name="list_fatura_preco">Preço: </string>
+    <!-- ITEM DA LISTVIEW -->
+    <string name="item_fatura_data">Data: </string>
+    <string name="item_fatura_refeicao">Refeição: </string>
+    <string name="item_fatura_prato">Prato: </string>
+    <string name="item_fatura_preco">Preço: </string>
+    <string name="item_fatura_cantina">Cantina #</string>
+
+    <!-- FATURAS -->
+    <string name="faturasList_label">Faturas</string>
+
+    <!-- MENU PRINCIPAL -->
+    <string name="menu_label">Ementa Do Dia</string>
+
+    <!-- EMENTAS -->
+    <string name="ementas_label">Ementas</string>
+
+    <!-- RESERVAR SENHAS -->
+    <string name="reservar_senhas_label">Reservar Senhas</string>
 </resources>

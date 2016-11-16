@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 intent = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

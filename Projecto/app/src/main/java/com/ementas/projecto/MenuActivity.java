@@ -81,6 +81,9 @@ public class MenuActivity extends AppCompatActivity
         } else if (id == R.id.nav_consultar_divida) {
             Intent i = new Intent(MenuActivity.this, ConsultarDividaActivity.class);
             startActivity(i);
+        } else if (id == R.id.nav_consultar_faturas) {
+            Intent i = new Intent(MenuActivity.this, FaturaActivity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
