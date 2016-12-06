@@ -33,4 +33,9 @@
 
     <!-- RESERVAR SENHAS -->
     <string name="reservar_senhas_label">Reservar Senhas</string>
+
+    <!-- Consultar Divida -->
+    <string name="consuldar_divida_label">Sua divida</string>
+    <string name="consuldar_divida_numero">Numero: </string>
+    <string name="consuldar_divida_divida">Deve: </string>
 </resources>

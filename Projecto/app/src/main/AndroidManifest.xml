@@ -36,7 +36,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConsultarDividaActivity">
+        <activity android:name=".ConsultarDividaActivity" android:label="@string/consuldar_divida_label">
             <intent-filter>
                 <action android:name="com.ementas.CONSULTARDIVIDA" />
 

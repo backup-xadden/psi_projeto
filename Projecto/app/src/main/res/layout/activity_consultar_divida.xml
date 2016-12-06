@@ -10,4 +10,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ementas.projecto.ConsultarDividaActivity">
 
+    <TextView
+        android:text="@string/consuldar_divida_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNumero"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/consuldar_divida_divida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDivida"
+        android:textSize="24sp"
+        android:layout_below="@+id/textViewNumero"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
 </RelativeLayout>
