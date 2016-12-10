@@ -33,6 +33,17 @@
 
     <!-- RESERVAR SENHAS -->
     <string name="reservar_senhas_label">Reservar Senhas</string>
+    <string name="reservar_senhas_escolherdia">Escolha o dia</string>
+    <string name="reservar_senhas_button">Reservar</string>
+    <string name="reservar_senhas_price">o preço de uma refeição é de 2.65€</string>
+
+    <string-array name="diasdesemana">
+        <item>Segunda</item>
+        <item>Terça</item>
+        <item>Quarta</item>
+        <item>Quinta</item>
+        <item>Sexta</item>
+    </string-array>
 
     <!-- Consultar Divida -->
     <string name="consuldar_divida_label">Sua divida</string>

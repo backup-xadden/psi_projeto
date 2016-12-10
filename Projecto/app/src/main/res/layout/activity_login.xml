@@ -13,12 +13,12 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:ems="10"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:id="@+id/editTextNumber"
-        android:hint="@string/act_login_number" />
+        android:hint="@string/act_login_number"
+        android:inputType="numberPassword" />
 
     <Button
         android:hint="@string/act_login_button_login"
