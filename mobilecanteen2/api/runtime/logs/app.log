@@ -1,0 +1,901 @@
+2016-12-11 18:17:41 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/country/index".' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/country/inde...', Array)
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2016-12-11 18:17:41 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/mobilecanteen2'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:\\wamp64\\www\\mobilecanteen2/'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '51698'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/countries'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/countries'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481480261.326
+    'REQUEST_TIME' => 1481480261
+]
+2016-12-11 18:19:03 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Request.php:191
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(80): yii\web\Request->resolve()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2016-12-11 18:19:03 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'qmelptcbncvm0grgf1d52467v4'
+    '_csrf-frontend' => '0a96039d9cae20258b799a1ff79810b6dcc70ac28ea210692c9a11b48991f24ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"m8CUSuFdPDGMIt9PsLYlmiMM4bj-4bNA\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => '9481c1cf-7d58-92ad-ed4e-f29a5942eefe'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=qmelptcbncvm0grgf1d52467v4; _csrf-frontend=0a96039d9cae20258b799a1ff79810b6dcc70ac28ea210692c9a11b48991f24ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22m8CUSuFdPDGMIt9PsLYlmiMM4bj-4bNA%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/mobilecanteen2'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:\\wamp64\\www\\mobilecanteen2/'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '51702'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481480343.609
+    'REQUEST_TIME' => 1481480343
+]
+2016-12-11 18:20:36 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Request.php:191
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(80): yii\web\Request->resolve()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2016-12-11 18:20:35 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/mobilecanteen2'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:\\wamp64\\www\\mobilecanteen2/'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '51712'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementa'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481480435.902
+    'REQUEST_TIME' => 1481480435
+]
+2016-12-11 18:20:38 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Request.php:191
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(80): yii\web\Request->resolve()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2016-12-11 18:20:38 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/mobilecanteen2'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:\\wamp64\\www\\mobilecanteen2/'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '51712'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementa'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481480438.605
+    'REQUEST_TIME' => 1481480438
+]
+2016-12-11 18:30:45 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Request.php:191
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(80): yii\web\Request->resolve()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2016-12-11 18:30:45 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'qmelptcbncvm0grgf1d52467v4'
+    '_csrf-frontend' => '0a96039d9cae20258b799a1ff79810b6dcc70ac28ea210692c9a11b48991f24ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"m8CUSuFdPDGMIt9PsLYlmiMM4bj-4bNA\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => '9be2c0b9-4f64-f9d6-9790-7521d7f4900a'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=qmelptcbncvm0grgf1d52467v4; _csrf-frontend=0a96039d9cae20258b799a1ff79810b6dcc70ac28ea210692c9a11b48991f24ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22m8CUSuFdPDGMIt9PsLYlmiMM4bj-4bNA%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/mobilecanteen2'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:\\wamp64\\www\\mobilecanteen2/'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '51806'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481481045.02
+    'REQUEST_TIME' => 1481481045
+]
+2016-12-11 18:30:52 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Request.php:191
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(80): yii\web\Request->resolve()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2016-12-11 18:30:52 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'qmelptcbncvm0grgf1d52467v4'
+    '_csrf-frontend' => '0a96039d9cae20258b799a1ff79810b6dcc70ac28ea210692c9a11b48991f24ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"m8CUSuFdPDGMIt9PsLYlmiMM4bj-4bNA\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => 'b3b0d86c-8a51-6dd6-1430-170b5a1a7b0f'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=qmelptcbncvm0grgf1d52467v4; _csrf-frontend=0a96039d9cae20258b799a1ff79810b6dcc70ac28ea210692c9a11b48991f24ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22m8CUSuFdPDGMIt9PsLYlmiMM4bj-4bNA%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => '/mobilecanteen2'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:\\wamp64\\www\\mobilecanteen2/'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '51808'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481481052.688
+    'REQUEST_TIME' => 1481481052
+]
+2016-12-11 18:58:45 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\rest\UrlRule::0' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Object->__set('0', 'v1/user')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\rest\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\rest\\UrlRul...', Array, Array)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\rest\\UrlRul...', Array, Array)
+#6 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\UrlManager.php(242): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\UrlManager.php(184): yii\web\UrlManager->buildRules(Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2-debug\Module.php(191): yii\base\Application->getUrlManager()
+#16 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(67): yii\base\Application->bootstrap()
+#18 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#19 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#20 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#21 C:\wamp64\www\mobilecanteen2\api\web\index.php(16): yii\base\Application->__construct(Array)
+#22 {main}
+2016-12-11 18:58:45 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+    'advanced-frontend' => 'o3hgivov5r8l1iired04ss63g5'
+    '_csrf-frontend' => '28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi\";}'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D; advanced-frontend=o3hgivov5r8l1iired04ss63g5; _csrf-frontend=28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi%22%3B%7D; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '52027'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/users'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/users'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481482725.815
+    'REQUEST_TIME' => 1481482725
+]
+2016-12-11 18:59:32 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\rest\UrlRule::0' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Object->__set('0', 'v1/user')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\rest\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\rest\\UrlRul...', Array, Array)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\rest\\UrlRul...', Array, Array)
+#6 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\UrlManager.php(242): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\UrlManager.php(184): yii\web\UrlManager->buildRules(Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2-debug\Module.php(191): yii\base\Application->getUrlManager()
+#16 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(67): yii\base\Application->bootstrap()
+#18 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#19 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#20 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#21 C:\wamp64\www\mobilecanteen2\api\web\index.php(16): yii\base\Application->__construct(Array)
+#22 {main}
+2016-12-11 18:59:32 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+    'advanced-frontend' => 'o3hgivov5r8l1iired04ss63g5'
+    '_csrf-frontend' => '28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi\";}'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D; advanced-frontend=o3hgivov5r8l1iired04ss63g5; _csrf-frontend=28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi%22%3B%7D; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '52035'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/users'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/users'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481482772.256
+    'REQUEST_TIME' => 1481482772
+]
+2016-12-11 19:02:09 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\rest\UrlRule::0' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Object->__set('0', 'v1/user')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\rest\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\rest\\UrlRul...', Array, Array)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\rest\\UrlRul...', Array, Array)
+#6 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\UrlManager.php(242): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\UrlManager.php(184): yii\web\UrlManager->buildRules(Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2-debug\Module.php(191): yii\base\Application->getUrlManager()
+#16 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(67): yii\base\Application->bootstrap()
+#18 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#19 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#20 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#21 C:\wamp64\www\mobilecanteen2\api\web\index.php(16): yii\base\Application->__construct(Array)
+#22 {main}
+2016-12-11 19:02:09 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+    'advanced-frontend' => 'o3hgivov5r8l1iired04ss63g5'
+    '_csrf-frontend' => '28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi\";}'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D; advanced-frontend=o3hgivov5r8l1iired04ss63g5; _csrf-frontend=28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi%22%3B%7D; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '52049'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/faturas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/faturas'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481482929.897
+    'REQUEST_TIME' => 1481482929
+]
+2016-12-11 19:02:16 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\rest\UrlRule::0' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Object->__set('0', 'v1/user')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\rest\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\rest\\UrlRul...', Array, Array)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\rest\\UrlRul...', Array, Array)
+#6 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\UrlManager.php(242): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\UrlManager.php(184): yii\web\UrlManager->buildRules(Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2-debug\Module.php(191): yii\base\Application->getUrlManager()
+#16 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(67): yii\base\Application->bootstrap()
+#18 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#19 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#20 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#21 C:\wamp64\www\mobilecanteen2\api\web\index.php(16): yii\base\Application->__construct(Array)
+#22 {main}
+2016-12-11 19:02:16 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+    'advanced-frontend' => 'o3hgivov5r8l1iired04ss63g5'
+    '_csrf-frontend' => '28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi\";}'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D; advanced-frontend=o3hgivov5r8l1iired04ss63g5; _csrf-frontend=28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi%22%3B%7D; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '52050'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481482936.567
+    'REQUEST_TIME' => 1481482936
+]
+2016-12-11 19:58:21 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Object not found: 1' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:101
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\DeleteAction.php(28): yii\rest\Action->findModel('1')
+#1 [internal function]: yii\rest\DeleteAction->run('1')
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('delete', Array)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/delet...', Array)
+#6 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2016-12-11 19:58:21 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_ACCEPT' => 'application/json, application/xml, text/json, text/x-json, text/javascript, text/xml'
+    'HTTP_USER_AGENT' => 'RestSharp/105.2.3.0'
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '53629'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481486301.169
+    'REQUEST_TIME' => 1481486301
+]
+2016-12-11 20:34:27 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Request.php:191
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(80): yii\web\Request->resolve()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2016-12-11 20:34:27 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+    'advanced-frontend' => 'o3hgivov5r8l1iired04ss63g5'
+    '_csrf-frontend' => '28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi\";}'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D; advanced-frontend=o3hgivov5r8l1iired04ss63g5; _csrf-frontend=28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi%22%3B%7D; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54965'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481488467.053
+    'REQUEST_TIME' => 1481488467
+]
+2016-12-11 21:10:42 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Object not found: 1' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:101
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\DeleteAction.php(28): yii\rest\Action->findModel('1')
+#1 [internal function]: yii\rest\DeleteAction->run('1')
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('delete', Array)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/delet...', Array)
+#6 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2016-12-11 21:10:42 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_ACCEPT' => 'application/json, application/xml, text/json, text/x-json, text/javascript, text/xml'
+    'HTTP_USER_AGENT' => 'RestSharp/105.2.3.0'
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '56763'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'DELETE'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481490641.989
+    'REQUEST_TIME' => 1481490641
+]
+2016-12-11 21:18:09 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Object not found: 1' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:101
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\UpdateAction.php(38): yii\rest\Action->findModel('1')
+#1 [internal function]: yii\rest\UpdateAction->run('1')
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('update', Array)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/updat...', Array)
+#6 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2016-12-11 21:18:09 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_ACCEPT' => 'application/json, application/xml, text/json, text/x-json, text/javascript, text/xml'
+    'HTTP_USER_AGENT' => 'RestSharp/105.2.3.0'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_LENGTH' => '184'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '57067'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'PUT'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481491089.602
+    'REQUEST_TIME' => 1481491089
+]
+2016-12-11 21:21:30 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Request.php:191
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(80): yii\web\Request->resolve()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2016-12-11 21:21:30 [::1][-][-][info][application] $_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'advanced-backend' => 'ap956o32g3sgks2lsm3lkk7h43'
+    '_csrf-backend' => 'f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53\";}'
+    'advanced-frontend' => 'o3hgivov5r8l1iired04ss63g5'
+    '_csrf-frontend' => '28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi\";}'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; advanced-backend=ap956o32g3sgks2lsm3lkk7h43; _csrf-backend=f60ea698e1fe93596737bd6c3c6996914c51c24609f9c521b567f860c6b86148a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22CwkjyH3WMhDIBPzc6jSResbdaQ2EiP53%22%3B%7D; advanced-frontend=o3hgivov5r8l1iired04ss63g5; _csrf-frontend=28f5dbe3ba6d8004f06a8d2266b778f0ae5599fe5b35ea03fa516321f09613baa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QGAftf5SuPj6FVFXJ5uHXZWEbisflsbi%22%3B%7D; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '57243'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1/'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481491290.111
+    'REQUEST_TIME' => 1481491290
+]
