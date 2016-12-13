@@ -13,5 +13,13 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../config/main-local.php')
 );
 
+//$file = 'log.txt';
+//$data = print_r($_REQUEST, true) . "\n" . print_r($_SERVER, true);
+//$data .= file_get_contents('php://input');
+//file_put_contents($file, $data);
+//die();
+
+
+
 $application = new yii\web\Application($config);
 $application->run();

@@ -899,3 +899,938 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1481491290.111
     'REQUEST_TIME' => 1481491290
 ]
+2016-12-12 10:59:12 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Object not found: 1' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:101
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\ViewAction.php(27): yii\rest\Action->findModel('1')
+#1 [internal function]: yii\rest\ViewAction->run('1')
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/view', Array)
+#6 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2016-12-12 10:59:12 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+    '_identity-backend' => '383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"6P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285; _identity-backend=383de39e817d400989e9fe6c8f2a11eb9940ebb7a3d8d294229371cda3469588a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%226P1GAc3jvtNk4ivaoENRRHUa9kaoi_i7%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '50907'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481540352.063
+    'REQUEST_TIME' => 1481540352
+]
+2016-12-13 14:20:28 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Ementa' not found' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:88
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\UpdateAction->run()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-13 14:20:27 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '288'
+    'HTTP_POSTMAN_TOKEN' => 'e56e519e-8b49-506a-7b76-94e53bea99c4'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54626'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'PUT'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481638827.603
+    'REQUEST_TIME' => 1481638827
+]
+2016-12-13 14:20:44 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class '\common\models\Ementa' not found' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:88
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\UpdateAction->run()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-13 14:20:43 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '288'
+    'HTTP_POSTMAN_TOKEN' => '5872f865-14ca-d8f7-9174-89ad993881f1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54629'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'PUT'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481638843.715
+    'REQUEST_TIME' => 1481638843
+]
+2016-12-13 14:22:25 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Ementa' not found' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:88
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\ViewAction->run()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-13 14:22:24 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54636'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481638944.955
+    'REQUEST_TIME' => 1481638944
+]
+2016-12-13 14:30:01 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Ementa' not found' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:88
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\UpdateAction->run()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-13 14:30:00 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '288'
+    'HTTP_POSTMAN_TOKEN' => '23abd626-7219-6f0b-f67f-09546fd84ebe'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54714'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'PUT'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481639400.946
+    'REQUEST_TIME' => 1481639400
+]
+2016-12-13 14:30:07 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Ementa' not found' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:88
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\ViewAction->run()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-13 14:30:06 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_POSTMAN_TOKEN' => '9eead061-2352-46f5-319d-bc33c595ec06'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54717'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481639406.818
+    'REQUEST_TIME' => 1481639406
+]
+2016-12-13 14:31:01 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Ementa' not found' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:88
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\ViewAction->run()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-13 14:31:01 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54719'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481639461.37
+    'REQUEST_TIME' => 1481639461
+]
+2016-12-13 14:31:58 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class '../../../../common/models/Ementa' not found' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:88
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\ViewAction->run()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-13 14:31:57 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'Phpstorm-9bab6108' => '3ccb393c-4d52-4a33-9df6-c685358ec285'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'Phpstorm-9bab6108=3ccb393c-4d52-4a33-9df6-c685358ec285'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54724'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481639517.812
+    'REQUEST_TIME' => 1481639517
+]
+2016-12-13 14:32:03 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Ementa' not found' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\Action.php:88
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\ViewAction->run()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\mobilecanteen2\api\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-12-13 14:32:03 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '54725'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas/1'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481639523.727
+    'REQUEST_TIME' => 1481639523
+]
+2016-12-13 15:41:11 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value
+The SQL being executed was: INSERT INTO `ementa` (`diadasemana`, `data`, `refeicao`, `sopa`, `carne`, `peixe`, `vegetariano`, `sobremesa`, `haementa`) VALUES ('Sabado', '10-12-2016', 'almoco', 'couves', 'vitela', 'bacalhau', 'pizza', 'chocolate', '1')' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `em...')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'id' doesn't have a default value
+)
+
+2016-12-13 15:41:10 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_ACCEPT' => 'application/json, application/xml, text/json, text/x-json, text/javascript, text/xml'
+    'HTTP_USER_AGENT' => 'RestSharp/105.2.3.0'
+    'CONTENT_TYPE' => 'application/json; charset=utf-8'
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_LENGTH' => '185'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '55252'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481643670.643
+    'REQUEST_TIME' => 1481643670
+]
+2016-12-13 15:43:21 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value
+The SQL being executed was: INSERT INTO `ementa` (`diadasemana`, `data`, `refeicao`, `sopa`, `carne`, `peixe`, `vegetariano`, `sobremesa`, `haementa`) VALUES ('Sabado', '10-12-2016', 'almoco', 'couves', 'vitela', 'bacalhau', 'pizza', 'chocolate', '1')' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `em...')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'id' doesn't have a default value
+)
+
+2016-12-13 15:43:20 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_ACCEPT' => 'application/json, application/xml, text/json, text/x-json, text/javascript, text/xml'
+    'HTTP_USER_AGENT' => 'RestSharp/105.2.3.0'
+    'CONTENT_TYPE' => 'application/json; charset=utf-8'
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_LENGTH' => '185'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '55380'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481643800.724
+    'REQUEST_TIME' => 1481643800
+]
+2016-12-13 15:46:45 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value
+The SQL being executed was: INSERT INTO `ementa` (`diadasemana`, `data`, `refeicao`, `sopa`, `carne`, `peixe`, `vegetariano`, `sobremesa`, `haementa`) VALUES ('Sabado', '10-12-2016', 'almoco', 'couves', 'vitela', 'bacalhau', 'pizza', 'chocolate', '1')' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `em...')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'id' doesn't have a default value
+)
+
+2016-12-13 15:46:45 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_ACCEPT' => 'application/json, application/xml, text/json, text/x-json, text/javascript, text/xml'
+    'HTTP_USER_AGENT' => 'RestSharp/105.2.3.0'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_HOST' => 'localhost'
+    'CONTENT_LENGTH' => '185'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '55471'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481644005.411
+    'REQUEST_TIME' => 1481644005
+]
+2016-12-13 15:57:17 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value
+The SQL being executed was: INSERT INTO `ementa` (`diadasemana`, `data`, `refeicao`, `sopa`, `carne`, `peixe`, `vegetariano`, `sobremesa`, `haementa`) VALUES ('Sabado', '05-12-2016', 'almoco', 'Hortaliça', 'Perna de porco estufada com puré', 'adfsvnvdj', 'Corgete á Brás', 'Fruta | doce | iogurte', '1')' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `em...')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'id' doesn't have a default value
+)
+
+2016-12-13 15:57:16 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '282'
+    'HTTP_POSTMAN_TOKEN' => '2309e640-8f1a-30de-6d98-4dae5bbe5ee6'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '55845'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481644636.467
+    'REQUEST_TIME' => 1481644636
+]
+2016-12-13 15:57:34 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value
+The SQL being executed was: INSERT INTO `ementa` (`diadasemana`, `data`, `refeicao`, `sopa`, `carne`, `peixe`, `vegetariano`, `sobremesa`, `haementa`) VALUES ('Sabado', '05-12-2016', 'almoco', 'Hortaliça', 'Perna de porco estufada com puré', 'adfsvnvdj', 'Corgete á Brás', 'Fruta | doce | iogurte', '1')' in C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `em...')
+#1 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\Schema.php(449): yii\db\Command->execute()
+#2 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('ementa', Array)
+#3 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\rest\CreateAction.php(50): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Action.php(92): call_user_func_array(Array, Array)
+#8 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams(Array)
+#9 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('v1/ementa/creat...', Array)
+#11 C:\wamp64\www\mobilecanteen2\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp64\www\mobilecanteen2\api\web\index.php(25): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'id' doesn't have a default value
+)
+
+2016-12-13 15:57:33 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '284'
+    'HTTP_POSTMAN_TOKEN' => '47523d5d-1448-bff9-c2ec-05731c6e7aaf'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.25;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/mobilecanteen2/api/web/index.php'
+    'REMOTE_PORT' => '55848'
+    'REDIRECT_URL' => '/mobilecanteen2/api/web/v1/ementas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mobilecanteen2/api/web/v1/ementas'
+    'SCRIPT_NAME' => '/mobilecanteen2/api/web/index.php'
+    'PHP_SELF' => '/mobilecanteen2/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1481644653.821
+    'REQUEST_TIME' => 1481644653
+]
