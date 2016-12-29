@@ -5,19 +5,22 @@
         <item
             android:id="@+id/nav_ementas"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Ementas" />
+            android:title="@string/navigation_drawer_ementas" />
         <item
             android:id="@+id/nav_reservar_senhas"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Reservar Senhas" />
+            android:title="@string/navigation_drawer_rsenhas" />
         <item
             android:id="@+id/nav_consultar_faturas"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Faturas" />
+            android:title="@string/navigation_drawer_faturas" />
         <item
             android:id="@+id/nav_consultar_divida"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Consultar divida" />
+            android:title="@string/navigation_drawer_divida" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/navigation_drawer_logout" />
     </group>
-
 </menu>

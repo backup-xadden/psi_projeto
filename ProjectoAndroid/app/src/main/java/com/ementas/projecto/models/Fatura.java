@@ -1,30 +1,25 @@
 package com.ementas.projecto.models;
 
-//java.util.Calendar;
 
 
 public class Fatura {
     private long id;
-    //private Calendar data;
     private String data;
     private Double preco;
-    private String cantina;
     private String refeicao;
     private String prato;
 
-    public Fatura(long id, String data, Double preco, String cantina, String refeicao, String prato) {
+    public Fatura(long id, String data, Double preco, String refeicao, String prato) {
         this.id = id;
         this.data = data;
         this.preco = preco;
-        this.cantina = cantina;
         this.refeicao = refeicao;
         this.prato = prato;
     }
 
-    public Fatura(String data, Double preco, String cantina, String refeicao, String prato) {
+    public Fatura(String data, Double preco, String refeicao, String prato) {
         this.data = data;
         this.preco = preco;
-        this.cantina = cantina;
         this.refeicao = refeicao;
         this.prato = prato;
     }
@@ -43,14 +38,6 @@ public class Fatura {
 
     public void setData(String data) {
         this.data = data;
-    }
-
-    public String getCantina() {
-        return cantina;
-    }
-
-    public void setCantina(String cantina) {
-        this.cantina = cantina;
     }
 
     public Double getPreco() {

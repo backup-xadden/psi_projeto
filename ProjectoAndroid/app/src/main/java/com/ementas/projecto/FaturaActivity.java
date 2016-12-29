@@ -24,10 +24,10 @@ public class FaturaActivity extends AppCompatActivity {
 
         faturas = new ArrayList<>();
 
-        faturas.add(new Fatura("2016-02-03", 1.00, "2", "Almoço", "Carne"));
-        faturas.add(new Fatura("2016-11-03", 1.50, "3", "Jantar", "Vegetariano"));
-        faturas.add(new Fatura("2016-05-13", 1.50, "2", "Almoço", "Carne"));
-        faturas.add(new Fatura("2015-12-23", 2.00, "4", "Almoço", "Peixe"));
+        faturas.add(new Fatura("2016-02-03", 1.00, "Almoço", "Carne"));
+        faturas.add(new Fatura("2016-11-03", 1.50, "Jantar", "Vegetariano"));
+        faturas.add(new Fatura("2016-05-13", 1.50, "Almoço", "Carne"));
+        faturas.add(new Fatura("2015-12-23", 2.00, "Almoço", "Peixe"));
 
         lvFatura = (ListView) findViewById(R.id.listViewFatura);
         lvFatura.setAdapter(new FaturaListItemAdapter(this, faturas));

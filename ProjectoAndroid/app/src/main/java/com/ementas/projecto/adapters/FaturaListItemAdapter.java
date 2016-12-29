@@ -64,11 +64,6 @@ public class FaturaListItemAdapter extends BaseAdapter {
         temp = "Preco: " + current.getPreco() + "€";
         ((TextView) reusedView.findViewById(R.id.textViewPreco)).setText(temp);
 
-        temp = "Cantina #" + current.getCantina();
-        ((TextView) reusedView.findViewById(R.id.textViewCantina)).setText(temp);
-
-
-
 
         return reusedView;
     }
