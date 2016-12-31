@@ -9,6 +9,10 @@ public class Fatura {
     private String refeicao;
     private String prato;
 
+    public Fatura () {
+        this(0, null, null, null, null);
+    }
+
     public Fatura(long id, String data, Double preco, String refeicao, String prato) {
         this.id = id;
         this.data = data;

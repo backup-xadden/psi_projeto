@@ -102,7 +102,7 @@ public class LocalCache extends SQLiteOpenHelper {
 
         long id = db.insert(FATURA_TABLE_NAME, null, values);
         if (id > -1) {
-            fatura.setId(id);
+            //fatura.setId(id);
             return true;
         }
 
