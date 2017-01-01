@@ -62,7 +62,6 @@ public class FaturaActivity extends AppCompatActivity {
 
         Ion.with(getApplicationContext())
                 .load("GET", "http://codicesapp.com/_alunos/grupo1/mobilecanteen/api/web/v1/faturas/faturauserid/" + userid)
-                .setLogging("MyLogs", Log.DEBUG)
                 .setTimeout(10000)
                 .setHeader("Content-type", "application/json")
                 .asJsonArray()

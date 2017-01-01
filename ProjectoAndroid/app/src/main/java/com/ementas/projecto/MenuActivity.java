@@ -2,9 +2,9 @@ package com.ementas.projecto;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,26 +14,58 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ementas.projecto.adapters.EmentaMenuListItemAdapter;
+import com.ementas.projecto.db.EmentaDeserializer;
+import com.ementas.projecto.db.LocalCache;
+import com.ementas.projecto.models.Ementa;
+import com.ementas.projecto.models.Fatura;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 import com.koushikdutta.ion.Response;
+
+import java.lang.reflect.Type;
+import java.util.Arrays;
+import java.util.List;
 
 public class MenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     SharedPreferences prefs;
     SharedPreferences.Editor editor;
 
+    private Gson gson;
+    private GsonBuilder gsonBuilder;
+    private LocalCache cache;
+
+    private List<Ementa> ementas;
+    private List<Ementa> db_ementas;
+
+    private ListView lvEmentaMenu;
+
+//    private TextView tvDia;
+//    private TextView tvData;
+//    private TextView tvRefeicao;
+//    private TextView tvSopa;
+//    private TextView tvCarne;
+//    private TextView tvPeixe;
+//    private TextView tvVegetariano;
+//    private TextView tvSobremesa;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        prefs = getSharedPreferences("mobilecanteen", 0);
-        editor = prefs.edit();
+        //NAVIGATION DRAWER
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -49,11 +81,84 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
 
         View header = navigationView.getHeaderView(0);
 
+        // END NAVIGATION DRAWER
+
+        prefs = getSharedPreferences("mobilecanteen", 0);
+        editor = prefs.edit();
+
+        cache = new LocalCache(MenuActivity.this);
+
+        gsonBuilder = new GsonBuilder();
+        gsonBuilder.registerTypeAdapter(Ementa.class, new EmentaDeserializer());
+        gson = gsonBuilder.create();
+
+//        tvDia = (TextView) findViewById(R.id.textViewDiaMenu);
+//        tvData = (TextView) findViewById(R.id.textViewDataMenu);
+//        tvRefeicao = (TextView) findViewById(R.id.textViewRefeicaoMenu);
+//        tvSopa = (TextView) findViewById(R.id.textViewSopaMenu);
+//        tvCarne = (TextView) findViewById(R.id.textViewCarneMenu);
+//        tvPeixe = (TextView) findViewById(R.id.textViewPeixeMenu);
+//        tvVegetariano = (TextView) findViewById(R.id.textViewVegetarianoMenu);
+//        tvSobremesa = (TextView) findViewById(R.id.textViewSobremesaMenu);
+
+        lvEmentaMenu = (ListView) findViewById(R.id.listViewMenuEmenta);
+
+        // set the username in the navigation drawer
         TextView tv_username = (TextView) header.findViewById(R.id.textViewUsername);
-
         String username = prefs.getString("username", "Username not found");
-
         tv_username.setText(username);
+
+        if(!prefs.getBoolean("apiEmenta", false)) {
+            editor.putBoolean("apiEmenta", true);
+            Ion.with(getApplicationContext())
+                    .load("GET", "http://codicesapp.com/_alunos/grupo1/mobilecanteen/api/web/v1/ementas")
+                    .setTimeout(10000)
+                    .setHeader("Content-type", "application/json")
+                    .asJsonArray()
+                    .setCallback(new FutureCallback<JsonArray>() {
+                        @Override
+                        public void onCompleted(Exception e, final JsonArray result) {
+                            if (e != null) {
+                                Toast.makeText(MenuActivity.this, e.toString(), Toast.LENGTH_LONG).show();
+                            } else {
+                                if (result != null) {
+                                    new AsyncTask<Void, Void, List<Ementa>>() {
+
+                                        @Override
+                                        protected List<Ementa> doInBackground(Void... params) {
+                                            Type listType = new TypeToken<List<Ementa>>(){}.getType();
+                                            ementas = gson.fromJson(result, listType);
+                                            Log.d("ementas", ementas.toString());
+                                            cache.saveEmentas(ementas);
+
+                                            return ementas;
+                                        }
+
+                                        @Override
+                                        protected void onPostExecute(List<Ementa> ementas1) {
+                                            Toast.makeText(MenuActivity.this, "não tinha dados (use api)", Toast.LENGTH_LONG).show();
+
+                                            String data = "2016-12-05";
+                                            db_ementas = cache.findDataEmenta(data);
+
+                                            lvEmentaMenu.setAdapter(new EmentaMenuListItemAdapter(MenuActivity.this, db_ementas));
+                                        }
+                                    }.execute();
+                                } else {
+                                    Toast.makeText(MenuActivity.this, "No connection available", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        }
+                    });
+        } else {
+            String data = "2016-12-05";
+            db_ementas = cache.findDataEmenta(data);
+
+            lvEmentaMenu.setAdapter(new EmentaMenuListItemAdapter(MenuActivity.this, db_ementas));
+
+        }
+
+
     }
 
     @Override

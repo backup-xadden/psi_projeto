@@ -25,6 +25,21 @@ public class Ementa {
         this.haementa = haementa;
     }
 
+    public Ementa(String diadasemana, String data, String refeicao, String sopa, String carne, String peixe, String vegetariano, String sobremesa) {
+        this.diadasemana = diadasemana;
+        this.data = data;
+        this.refeicao = refeicao;
+        this.sopa = sopa;
+        this.carne = carne;
+        this.peixe = peixe;
+        this.vegetariano = vegetariano;
+        this.sobremesa = sobremesa;
+    }
+
+    public Ementa() {
+        this(0, null, null, null, null, null, null, null, null, 0);
+    }
+
     public long getId() {
         return id;
     }

@@ -20,12 +20,23 @@
 
     <string name="action_settings">Settings</string>
 
-    <!-- ITEM DA LISTVIEW -->
+    <!-- ITEM DA FATURA LISTVIEW -->
     <string name="item_fatura_data">Data: </string>
     <string name="item_fatura_refeicao">Refeição: </string>
     <string name="item_fatura_prato">Prato: </string>
     <string name="item_fatura_preco">Preço: </string>
     <string name="item_fatura_cantina">Cantina #</string>
+
+    <!-- ITEM DA EMENTA LISTVIEW -->
+    <string name="item_ementa_dia">Dia da Semana: </string>
+    <string name="item_ementa_data">Data: </string>
+    <string name="item_ementa_refeicao">Refeição: </string>
+    <string name="item_ementa_sopa">Sopa: </string>
+    <string name="item_ementa_carne">Carne: </string>
+    <string name="item_ementa_peixe">Peixe: </string>
+    <string name="item_ementa_vegetariano">Vegetariano: </string>
+    <string name="item_ementa_sobremesa">Sobremesa: </string>
+
 
     <!-- FATURAS -->
     <string name="faturasList_label">Faturas</string>

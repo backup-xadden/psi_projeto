@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="@string/item_ementa_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDiaDaSemana"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/item_ementa_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDataEmenta"
+        android:layout_below="@+id/textViewDiaDaSemana"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/item_ementa_refeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewRefeicaoEmenta"
+        android:layout_below="@+id/textViewDataEmenta"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/item_ementa_sopa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewRefeicaoEmenta"
+        android:id="@+id/textViewSopa" />
+
+    <TextView
+        android:text="@string/item_ementa_carne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSopa"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewCarne" />
+
+    <TextView
+        android:text="@string/item_ementa_peixe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCarne"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewPeixe" />
+
+    <TextView
+        android:text="@string/item_ementa_vegetariano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPeixe"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewVegetariano" />
+
+    <TextView
+        android:text="@string/item_ementa_sobremesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewVegetariano"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewSobremesa" />
+</RelativeLayout>
