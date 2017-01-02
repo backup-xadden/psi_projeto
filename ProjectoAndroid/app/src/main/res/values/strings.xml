@@ -50,8 +50,10 @@
     <!-- RESERVAR SENHAS -->
     <string name="reservar_senhas_label">Reservar Senhas</string>
     <string name="reservar_senhas_escolherdia">Escolha o dia</string>
-    <string name="reservar_senhas_button">Reservar</string>
-    <string name="reservar_senhas_price">o preço de uma refeição é de 2.65€</string>
+    <string name="reservar_senhas_button">Reservar senha</string>
+    <string name="reservar_senhas_price">O preço de uma refeição é de 2.40€. Será adicionado 0.50€ se reservar senha no mesmo dia</string>
+    <string name="reservar_senhas_escolherrefeicao">Escolha a refeição</string>
+    <string name="reservar_senhas_escolherprato">Escolha o prato</string>
 
     <string-array name="diasdesemana">
         <item>Segunda</item>
@@ -61,8 +63,19 @@
         <item>Sexta</item>
     </string-array>
 
+    <string-array name="refeicao">
+        <item>Almoço</item>
+        <item>Jantar</item>
+    </string-array>
+
+    <string-array name="prato">
+        <item>Carne</item>
+        <item>Peixe</item>
+        <item>Vegetariano</item>
+    </string-array>
+
     <!-- Consultar Divida -->
-    <string name="consuldar_divida_label">Sua divida</string>
-    <string name="consuldar_divida_numero">Numero: </string>
+    <string name="consuldar_divida_label">Divida</string>
+    <string name="consuldar_divida_numero">Número: </string>
     <string name="consuldar_divida_divida">Deve: </string>
 </resources>

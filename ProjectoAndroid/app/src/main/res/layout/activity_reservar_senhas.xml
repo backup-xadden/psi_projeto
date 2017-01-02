@@ -16,23 +16,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textViewEscolher"
-        android:textSize="24sp" />
-
-    <Button
-        android:text="@string/reservar_senhas_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:id="@+id/buttonReservar"
-        android:layout_below="@+id/spinner"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/textViewEscolherDia"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:layout_below="@+id/textViewEscolher"
+        android:id="@+id/spinnerDia"
+        android:layout_below="@+id/textViewEscolherDia"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp" />
 
@@ -44,4 +36,49 @@
         android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/reservar_senhas_escolherrefeicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerDia"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:id="@+id/textViewEscolherRefeicao"
+        android:textStyle="normal|bold" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEscolherRefeicao"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/spinnerRefeicao" />
+
+    <TextView
+        android:text="@string/reservar_senhas_escolherprato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerRefeicao"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/spinnerPrato" />
+
+    <Button
+        android:text="@string/reservar_senhas_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPrato"
+        android:layout_marginTop="37dp"
+        android:id="@+id/buttonReservar" />
 </RelativeLayout>

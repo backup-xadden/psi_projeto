@@ -92,15 +92,6 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         gsonBuilder.registerTypeAdapter(Ementa.class, new EmentaDeserializer());
         gson = gsonBuilder.create();
 
-//        tvDia = (TextView) findViewById(R.id.textViewDiaMenu);
-//        tvData = (TextView) findViewById(R.id.textViewDataMenu);
-//        tvRefeicao = (TextView) findViewById(R.id.textViewRefeicaoMenu);
-//        tvSopa = (TextView) findViewById(R.id.textViewSopaMenu);
-//        tvCarne = (TextView) findViewById(R.id.textViewCarneMenu);
-//        tvPeixe = (TextView) findViewById(R.id.textViewPeixeMenu);
-//        tvVegetariano = (TextView) findViewById(R.id.textViewVegetarianoMenu);
-//        tvSobremesa = (TextView) findViewById(R.id.textViewSobremesaMenu);
-
         lvEmentaMenu = (ListView) findViewById(R.id.listViewMenuEmenta);
 
         // set the username in the navigation drawer
@@ -136,7 +127,6 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
 
                                         @Override
                                         protected void onPostExecute(List<Ementa> ementas1) {
-                                            Toast.makeText(MenuActivity.this, "não tinha dados (use api)", Toast.LENGTH_LONG).show();
 
                                             String data = "2016-12-05";
                                             db_ementas = cache.findDataEmenta(data);
