@@ -150,4 +150,42 @@ public class LocalCache extends SQLiteOpenHelper {
 
         return ementas;
     }
+
+    public List<Ementa> findWeeklyEmenta(int pos) {
+
+        List<Ementa> ementas = new ArrayList<>();
+        Cursor cursor;
+
+        SQLiteDatabase db = getWritableDatabase();
+
+        switch (pos) {
+            case 1:
+                cursor = db.rawQuery("SELECT * FROM " + EMENTA_TABLE_NAME + " order by id limit 10 offset 0", null);
+                break;
+            case 2:
+                cursor = db.rawQuery("SELECT * FROM " + EMENTA_TABLE_NAME + " order by id limit 10 offset 10", null);
+                break;
+            case 3:
+                cursor = db.rawQuery("SELECT * FROM " + EMENTA_TABLE_NAME + " order by id limit 10 offset 20", null);
+                break;
+            case 4:
+                cursor = db.rawQuery("SELECT * FROM " + EMENTA_TABLE_NAME + " order by id limit 10 offset 30", null);
+                break;
+            default:
+                cursor = db.rawQuery("SELECT * FROM " + EMENTA_TABLE_NAME + " ORDER BY id", null);
+                break;
+        }
+
+        try {
+            if (cursor.moveToFirst()) {
+                do {
+                    ementas.add(new Ementa(cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7), cursor.getString(8)));
+                } while (cursor.moveToNext());
+            }
+        } finally {
+            cursor.close();
+        }
+
+        return ementas;
+    }
 }

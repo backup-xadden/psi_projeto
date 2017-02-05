@@ -50,30 +50,21 @@ public class EmentaListItemAdapter extends BaseAdapter {
 
         Ementa current = ementas.get(position);
 
-        String temp;
-        temp = "Dia da Semana: " + current.getDiadasemana();
-        ((TextView) reusedView.findViewById(R.id.textViewDiaDaSemana)).setText(temp);
+        ((TextView) reusedView.findViewById(R.id.textViewDiaDaSemanaValue)).setText(current.getDiadasemana());
 
-        temp = "Data: " + current.getData();
-        ((TextView) reusedView.findViewById(R.id.textViewDataEmenta)).setText(temp);
+        ((TextView) reusedView.findViewById(R.id.textViewDataEmentaValue)).setText(current.getData());
 
-        temp = "Refeição: " + current.getRefeicao();
-        ((TextView) reusedView.findViewById(R.id.textViewRefeicaoEmenta)).setText(temp);
+        ((TextView) reusedView.findViewById(R.id.textViewRefeicaoEmentaValue)).setText(current.getRefeicao());
 
-        temp = "Sopa: " + current.getSopa();
-        ((TextView) reusedView.findViewById(R.id.textViewSopa)).setText(temp);
+        ((TextView) reusedView.findViewById(R.id.textViewSopaValue)).setText(current.getSopa());
 
-        temp = "Carne: " + current.getCarne();
-        ((TextView) reusedView.findViewById(R.id.textViewCarne)).setText(temp);
+        ((TextView) reusedView.findViewById(R.id.textViewCarneValue)).setText(current.getCarne());
 
-        temp = "Peixe: " + current.getPeixe();
-        ((TextView) reusedView.findViewById(R.id.textViewPeixe)).setText(temp);
+        ((TextView) reusedView.findViewById(R.id.textViewPeixeValue)).setText(current.getPeixe());
 
-        temp = "Vegetariano: " + current.getVegetariano();
-        ((TextView) reusedView.findViewById(R.id.textViewVegetariano)).setText(temp);
+        ((TextView) reusedView.findViewById(R.id.textViewVegetarianoValue)).setText(current.getVegetariano());
 
-        temp = "Sobremesa: " + current.getSobremesa();
-        ((TextView) reusedView.findViewById(R.id.textViewSobremesa)).setText(temp);
+        ((TextView) reusedView.findViewById(R.id.textViewSobremesaValue)).setText(current.getSobremesa());
 
 
         return reusedView;

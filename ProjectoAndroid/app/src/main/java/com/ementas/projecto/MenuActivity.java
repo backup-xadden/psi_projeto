@@ -102,7 +102,7 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         if(!prefs.getBoolean("apiEmenta", false)) {
             editor.putBoolean("apiEmenta", true);
             Ion.with(getApplicationContext())
-                    .load("GET", "http://codicesapp.com/_alunos/grupo1/mobilecanteen/api/web/v1/ementas")
+                    .load("GET", "http://codicesapp.com/_alunos/grupo1/mobilecanteen/api/web/v1/ementas?per-page=40")
                     .setTimeout(10000)
                     .setHeader("Content-type", "application/json")
                     .asJsonArray()

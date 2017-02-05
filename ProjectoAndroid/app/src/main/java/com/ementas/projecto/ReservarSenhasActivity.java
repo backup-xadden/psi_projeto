@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -39,6 +40,10 @@ public class ReservarSenhasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservar_senhas);
+
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         cache = new LocalCache(this);
         ementas = cache.findAllEmentas();
@@ -109,5 +114,16 @@ public class ReservarSenhasActivity extends AppCompatActivity {
                         });
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                Intent intent = new Intent(this, MenuActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

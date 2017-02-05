@@ -8,12 +8,20 @@
         android:text="@string/item_ementa_dia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:id="@+id/textViewDiaDaSemana"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewDiaDaSemana"
+        android:id="@+id/textViewDiaDaSemanaValue"/>
+
+    <TextView
         android:text="@string/item_ementa_data"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textViewDataEmenta"
@@ -21,7 +29,15 @@
         android:layout_alignParentStart="true" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDiaDaSemana"
+        android:layout_toEndOf="@+id/textViewDataEmenta"
+        android:id="@+id/textViewDataEmentaValue"/>
+
+    <TextView
         android:text="@string/item_ementa_refeicao"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textViewRefeicaoEmenta"
@@ -29,7 +45,15 @@
         android:layout_alignParentStart="true" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDataEmenta"
+        android:layout_toEndOf="@+id/textViewRefeicaoEmenta"
+        android:id="@+id/textViewRefeicaoEmentaValue"/>
+
+    <TextView
         android:text="@string/item_ementa_sopa"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -37,7 +61,15 @@
         android:id="@+id/textViewSopa" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewSopa"
+        android:layout_below="@+id/textViewRefeicaoEmenta"
+        android:id="@+id/textViewSopaValue"/>
+
+    <TextView
         android:text="@string/item_ementa_carne"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewSopa"
@@ -45,7 +77,15 @@
         android:id="@+id/textViewCarne" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewCarne"
+        android:layout_below="@+id/textViewSopa"
+        android:id="@+id/textViewCarneValue"/>
+
+    <TextView
         android:text="@string/item_ementa_peixe"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewCarne"
@@ -53,7 +93,15 @@
         android:id="@+id/textViewPeixe" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewPeixe"
+        android:layout_below="@+id/textViewCarne"
+        android:id="@+id/textViewPeixeValue"/>
+
+    <TextView
         android:text="@string/item_ementa_vegetariano"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewPeixe"
@@ -61,10 +109,25 @@
         android:id="@+id/textViewVegetariano" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewVegetariano"
+        android:layout_below="@+id/textViewPeixe"
+        android:id="@+id/textViewVegetarianoValue"/>
+
+    <TextView
         android:text="@string/item_ementa_sobremesa"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewVegetariano"
         android:layout_alignParentStart="true"
         android:id="@+id/textViewSobremesa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewSobremesa"
+        android:layout_below="@+id/textViewVegetariano"
+        android:id="@+id/textViewSobremesaValue"/>
 </RelativeLayout>

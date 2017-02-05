@@ -1,10 +1,12 @@
 package com.ementas.projecto;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -49,6 +51,10 @@ public class FaturaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fatura);
 
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         cache = new LocalCache(FaturaActivity.this);
 
         gsonBuilder = new GsonBuilder();
@@ -81,5 +87,16 @@ public class FaturaActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                Intent intent = new Intent(this, MenuActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

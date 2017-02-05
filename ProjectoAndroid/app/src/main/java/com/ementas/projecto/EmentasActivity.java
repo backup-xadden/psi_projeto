@@ -1,12 +1,19 @@
 package com.ementas.projecto;
 
+import android.app.ActionBar;
+import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.NavUtils;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.ementas.projecto.adapters.EmentaFragmentAdapter;
 import com.ementas.projecto.adapters.EmentaListItemAdapter;
 import com.ementas.projecto.db.LocalCache;
 import com.ementas.projecto.models.Ementa;
@@ -26,21 +33,25 @@ public class EmentasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ementas);
 
-        db = new LocalCache(this);
-        lvEmenta = (ListView) findViewById(R.id.listViewEmenta);
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
-        new AsyncTask<Void, Void, List<Ementa>>() {
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new EmentaFragmentAdapter(getSupportFragmentManager(), EmentasActivity.this));
 
-            @Override
-            protected List<Ementa> doInBackground(Void... params) {
-                ementas = db.findAllEmentas();
-                return ementas;
-            }
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
+    }
 
-            @Override
-            protected void onPostExecute(List<Ementa> ementas1) {
-                lvEmenta.setAdapter(new EmentaListItemAdapter(EmentasActivity.this, ementas1));
-            }
-        }.execute();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                Intent intent = new Intent(this, MenuActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
